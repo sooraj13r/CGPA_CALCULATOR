@@ -1,0 +1,467 @@
+
+<html>
+<head><title>Finder</title>
+<style>body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+
+<script src="scriptmix.js"></script>
+</head>
+<body>
+<center><hr>
+<h1>DEPARTMENT OF COMPUTER ENGINEERING</h1>
+<h3>ST.MARY'S POLYTECHNIC COLLEGE,PALAKKAD</h3><Hr>
+<h2>CGPA CALCULATOR (REVISION-2015)</h2>
+
+<hr>
+<h2>SEMESTER 1</h2>
+<h2>Select your grades</h2>
+<table width="50%">
+<tr><th>Subject Code</th><th>Subject name</th><th>Points</th><th>Grade Obtained</th></tr>
+<tr><td>1001</td><td>ENGLISH FOR COMMUNICATION-1</td><td>3</td><td><select id="eng1">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>1002</td><td>ENGINEERING MATHEMATICS-1</td><td>6</td><td><select id="math1">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>1003</td><td>ENGINEERING PHYSICS-1</td><td>3</td><td><select id="phy1">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>1004</td><td>ENGINEERING CHEMISTRY-1</td><td>3</td><td><select id="che1">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>1009</td><td>ENGINEERING HEALTH & PHYSICAL EDUCATION</td><td>2</td><td><select id="hpe1">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>1008</td><td>COMPUTING FUNDAMENTALS(LAB)</td><td>4</td><td><select id="cf1">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr></table><br><br>
+<h2>SEMESTER 2</h2>
+<h2>Select your grades</h2>
+
+<table width="50%">
+<tr><th>Subject Code</th><th>Subject name</th><th>Points</th><th>Grade Obtained</th></tr>
+<tr><td>2001</td><td>ENGLISH FOR COMMUNICATION-2</td><td>3</td><td><select id="eng2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2002</td><td>ENGINEERING MATHEMATICS-2</td><td>6</td><td><select id="math2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2003</td><td>ENGINEERING PHYSICS-2</td><td>3</td><td><select id="phy2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2004</td><td>ENGINEERING CHEMISTRY-2</td><td>3</td><td><select id="che2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+
+<tr><td>2131</td><td>PROGRAMMING IN C</td><td>4</td><td><select id="c2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2005</td><td>ENGINEERING GRAPHICS</td><td>5</td><td><select id="eg2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2008</td><td>WORKSHOP PRACTICE</td><td>3</td><td><select id="wp2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2007</td><td>ENGINEERING SCIENCE LAB</td><td>3</td><td><select id="slab2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2139</td><td>PROGRAMMING IN C LAB</td><td>2</td><td><select id="clab2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2009</td><td>LIFE SKILL</td><td>2</td><td><select id="lskill2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+</table>
+<h2>SEMESTER 3</h2>
+<h2>Select your grades</h2>
+
+<table width="50%">
+<tr><th>Subject Code</th><th>Subject name</th><th>Points</th><th>Grade Obtained</th></tr>
+<tr><td>3133</td><td>DIGITAL COMPUTER PRINCIPLES</td><td>4</td><td><select id="dcp3">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>3134</td><td>OBJECT ORIENTED PROGRAMMING THROUGH C++</td><td>5</td><td><select id="cpp3">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>3131</td><td>COMPUTER ARCHITECTURE</td><td>4</td><td><select id="ca3">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>3132</td><td>DATABASE MANAGEMENT SYSTEM</td><td>4</td><td><select id="dbms3">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+
+<tr><td>3001</td><td>ENVIRONMENTAL SCIENCE AND DISASTER MANAGEMENT</td><td>3</td><td><select id="evs3">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>3138</td><td>DIGITAL COMPUTER PRINCIPLES LAB</td><td>3</td><td><select id="dcpl3">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>3137</td><td>OBJECT ORIENTED PROGRAMMING LAB</td><td>3</td><td><select id="cppl3">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>3139</td><td>DATABASE MANAGEMENT SYSTEM LAB</td><td>2</td><td><select id="dbmsl3">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+</table>
+<h2>SEMESTER 4</h2>
+<h2>Select your grades</h2>
+
+<table width="50%">
+<tr><th>Subject Code</th><th>Subject name</th><th>Points</th><th>Grade Obtained</th></tr>
+<tr><td>4132</td><td>DATA COMMUNICATION</td><td>4</td><td><select id="dc4">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>4134</td><td>OPERATING SYSTEMS</td><td>4</td><td><select id="os4">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>4133</td><td>DATA STRUCTURES</td><td>5</td><td><select id="ds4">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>4131</td><td>COMPUTER SYSTEM HARDWARE</td><td>4</td><td><select id="csh4">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+
+<tr><td>4139</td><td>SYSTEM ADMINISTRATION LAB</td><td>3</td><td><select id="sal4">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>4138</td><td>DATA STRUCTURE LAB</td><td>3</td><td><select id="dsl4">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>4137</td><td>COMPUTER SYSTEM HARDWARE LAB</td><td>3</td><td><select id="cshl4">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>4136</td><td>APPLICATION DEVELOPMENT USING JAVA</td><td>5</td><td><select id="adl4">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+</table><br><button class="button" onclick="calculate1()">Calculate CGPA</button> <button class="button" onclick="reloadpage()" >Reset</button><br><br><br>
+<table  border="1" width="50%"><tr><th><b>Semester</b></th><th>CGPA</th></tr>
+<tr><td align="center">Semester1</td><td><h3><label id="result"></label></h3></td></tr>
+<tr><td align="center">Semester2</td><td><h3><label id="result2"></label></h3></td></tr>
+<tr><td align="center">Semester3</td><td><h3><label id="result3"></label></h3></td></tr>
+<tr><td align="center">Semester4</td><td><h3><label id="result4"></label></h3></td></tr>
+<tr><th align="center">Total</th><td><h3><label id="tot"></label></h3></td></tr>
+</table>
+<br><center>
+<hr><p><tt>design & development by Sooraj_R, email:soorajr19@ct.sitsac.in</tt></p><tt>all rights reserved</tt></center>
+</body>
+</html>

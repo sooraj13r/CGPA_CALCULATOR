@@ -1,0 +1,201 @@
+<html>
+<head><title>Finder</title>
+<style>body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+<script src="script2.js"></script>
+</head>
+<body>
+<center><hr>
+<h1>DEPARTMENT OF COMPUTER ENGINEERING</h1>
+<TEL><h3>ST.MARY'S POLYTECHNIC COLLEGE,PALAKKAD</h3></TEL><Hr>
+<h2>CGPA CALCULATOR (REVISION-2015)</h2>
+
+<hr>
+<h2>SEMESTER 2</h2>
+<h2>Select your grades</h2>
+
+<table>
+<tr><th>Subject Code</th><th>Subject name</th><th>Points</th><th>Grade Obtained</th></tr>
+<tr><td>2001</td><td>ENGLISH FOR COMMUNICATION-2</td><td>3</td><td><select id="eng2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2002</td><td>ENGINEERING MATHEMATICS-2</td><td>6</td><td><select id="math2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2003</td><td>ENGINEERING PHYSICS-2</td><td>3</td><td><select id="phy2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2004</td><td>ENGINEERING CHEMISTRY-2</td><td>3</td><td><select id="che2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+
+<tr><td>2131</td><td>PROGRAMMING IN C</td><td>4</td><td><select id="c2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2005</td><td>ENGINEERING GRAPHICS</td><td>5</td><td><select id="eg2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2008</td><td>WORKSHOP PRACTICE</td><td>3</td><td><select id="wp2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2007</td><td>ENGINEERING SCIENCE LAB</td><td>3</td><td><select id="slab2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2139</td><td>PROGRAMMING IN C LAB</td><td>2</td><td><select id="clab2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+<tr><td>2009</td><td>LIFE SKILL</td><td>2</td><td><select id="lskill2">
+<option>Grade</option>
+<option value="10">S</option>
+<option value="9">A</option>
+<option value="8">B</option>
+<option value="7">C</option>
+<option value="6">D</option>
+<option value="5">E</option>
+<option value="0">F</option>
+</select>
+</td></tr>
+</table><br><table><tr><td>
+<button class="button" onclick="calculate2()">Calculate CGPA</button></td><td><button class="button" onclick="reloadpage()">Reset</button></td></tr><tr></tr><tr><th align="center">
+<h1><label id="result2"></label></h1></th></tr></table><center>
+<hr><p><tt>design & development by Sooraj_R, email:soorajr19@ct.sitsac.in</tt></p><tt>all rights reserved</tt></center>
+</body>
+</html>
